@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -40,6 +43,14 @@
     right: 0; */
 }
 
+.bg-white{
+    width: 100vw;
+    height: 60px;
+    background: skyblue;
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 1;
+}
 .hamburger{
     /* display: block!important; */
     position: absolute;
@@ -49,6 +60,7 @@
     height: 30px;
     margin-top: 20px;
     margin-left: 20px;
+    position: fixed;
 }
 .wrong{
     display: none;
@@ -56,9 +68,11 @@
     left: 60%;
     top: 30px;
     z-index: 100;
-    width: 50px;
+    width: 30px;
     height: 30px;
-    background-color: black;
+
+    position: fixed;
+    /* background-color: black; */
 }
 .side-bar{
     display: flex;
@@ -66,18 +80,33 @@
     justify-content: flex-start;
     gap: 50px;
     margin-left: 50px;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
+    overflow-y: scroll;
 }
 .upgrade{
+    /* width: 5vh;
+    height: 5vh;
     position: fixed;
     bottom: 50px;
     align-self: flex-start;
     justify-self: flex-end;
-    /* margin-bottom: 100px; */
+    margin-bottom: 100px;
     margin-left: -50px;
-    margin-top: 150px;
+    margin-top: 150px; */
+
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    align-self: flex-start;
+    justify-self: flex-end;
+}
+.upgrade img{
+    width: 100%;
+    height: 100%;
 }
 .nav-menu{
     display: flex;
@@ -117,8 +146,15 @@ color: #141522;
 .nav-menu .active .light{
     display: none;
 }
+.nav-menu .active .dark{
+    display: block;
+}
 .menu img{
     height: 20px;
+}
+.db-header{
+    display:flex;
+    justify-content: space-between;
 }
 
 .center{
@@ -153,13 +189,26 @@ line-height: 150%;
 color: #9C9CA4;
 
 }
+
+.db-search{
+    display: none;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    margin-right: 15px;
+    border-bottom: 1px solid gray;
+}
 .db-h-menus{
     display: flex;
     align-items: center;
     margin-top: -30px;
-    position: absolute;
+    /* position: absolute;
     right: 25%;
-    top: 21%;
+    top: 15%; */
+    cursor: pointer;
+}
+.mentor .gray{
+    font-size: 12px;
 }
 
 .tracking{
@@ -219,6 +268,10 @@ color: #141522;
 .mentor{
     /* display: flex; */
     width: 50%;
+    display: none;
+}
+.mentors .show{
+    display: block;
 }
 .mentor-info{
     display: flex;
@@ -233,6 +286,7 @@ color: #141522;
     margin-top: 20px;
     /* padding-left: 20px; */
 }
+
 .mentor-course div{
     display: flex;
 }
@@ -254,17 +308,24 @@ color: #141522;
     align-items: baseline;
     margin-top: 50px;
 }
-.courses{
+.db-courses{
     margin-top: 50px;
     display: flex;
     gap: 10%;
     margin-left: 40px;
 }
-.courses .course{
+.db-courses .course{
     display: flex;
     flex-direction: column;
     width: 40%;
     gap: 20px;
+}
+.db-courses .course{
+    width: 50%;
+    display: none;
+}
+.db-courses .show{
+    display: block;
 }
 .course > img{
     margin-left: -10px;
@@ -312,21 +373,32 @@ color: #141522;
 }
 .day-style{
     display: flex;
-    gap: 9%;
+    gap: 7%;
     margin-left: 10%;
     margin-top: 10%;
     margin-bottom: 10%;
     width: 100%;
+}
+.day-style .active{
+    padding: 6px 11px;
+    border-radius: 12px;
+    background: #ffc700;
+    margin-top: -4px;
+}
+.day-style .active .date{
+    background-color: black;
+    color: white;
 }
 .days{
     width: 4%;
     display: flex;
     flex-direction: column;
     gap: 5px;
+    cursor: pointer;
 }
 .days .day{
     font-weight: 400;
-font-size: 16px;
+font-size: 14px;
 line-height: 150%;
 /* identical to box height, or 21px */
 
@@ -339,14 +411,14 @@ color: #9C9CA4;
 }
 .days .date{
     background: #F5F5F7;
-border-radius: 100px;
-width: 30px;
-height: 30px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-left: -10px;
-font-size: 12px;
+    border-radius: 100px;
+    width: 23px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5px;
+    font-size: 11px;
 }
 
 .db-course-info{
@@ -495,11 +567,13 @@ margin-bottom: 30px;
     }
     .side-bar{
         display: none;
+        /* z-index: 10000; */
         /* opacity: 0; */
     }
     
     .right-bar{
         width: 35%;
+        margin-top: 60px;
     }
     .center{
         width: 60%;
@@ -515,20 +589,23 @@ margin-bottom: 30px;
         /* margin-bottom: -20px;
         margin-top: 15px; */
     }
-    .courses h3{
+    .db-courses h3{
         font-size: 18px;
     }
     .db-h-menus{
-        margin-top: -120px;
+        /* margin-top: -120px; */
         gap: 30px;
         align-self: flex-end;
         position: absolute;
     right: 33%;
-    top: 19%;
+    /* top: 7%; */
+    top: 12%;
+    z-index: 1;
+
     }
     .db-header .db-h-info{
-        margin-top: -67px;
-        margin-bottom: 50px;
+        margin-top: -28px;
+        /* margin-bottom: 50px; */
     }
     .side-bar{
         height: 100%;
@@ -536,10 +613,14 @@ margin-bottom: 30px;
         background: rgb(210, 205, 205);
         margin-left: 0;
         padding-left: 50px;
-        z-index: 10;
+        z-index: 11;
+        overflow: scroll;
     }
 }
 
+.prev, .next{
+    cursor: pointer;
+}
 
 
 
@@ -551,6 +632,10 @@ margin-bottom: 30px;
     }
     .side-bar{
         display: block!important;
+        overflow: hidden;
+    }
+    .bg-white{
+        display: none;
     }
     .hamburger{
         display: none;
@@ -571,12 +656,12 @@ margin-bottom: 30px;
 
 
 @media screen and (max-width: 800px) {
-    .courses{
+    .db-courses{
         flex-direction: column;
     align-items: center;
     gap: 20px;
     }
-    .courses .course{
+    .db-courses .course{
         width: 82%;
     }
 }
@@ -636,7 +721,10 @@ margin-bottom: 30px;
     .mentor{
         margin-left: -20px;
     }
-    .courses{
+    .db-courses{
         margin-left: 0;
+    }
+    .side-bar{
+        overflow: scroll;
     }
 }

@@ -25,8 +25,13 @@ export default function SideBar() {
   }
   return (
     <>
-        <img src="assets/arrow-rightdark-arrow.png" alt="" className="hamburger" onClick={handleClick}/>
-        <img src="assets/arrow-leftlight-arrow.png" alt="" className="wrong" onClick={handleWrong}/>
+        {/* <img src="assets/arrow-rightdark-arrow.png" alt="" className="hamburger" onClick={handleClick}/>
+        <img src="assets/arrow-leftlight-arrow.png" alt="" className="wrong" onClick={handleWrong}/> */}
+        <div className='bg-white'>
+
+        <img src='assets/menuhamburger.png' alt='' className='hamburger' onClick={handleClick} />
+        </div>
+        <img src="assets/closewrong.png" alt="" className="wrong" onClick={handleWrong}/>
 
     <div className="side-bar">
 

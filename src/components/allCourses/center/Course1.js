@@ -1,8 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Course1() {
+    const style = {
+        textDecoration: "none",
+        color: 'black'
+    }
   return (
-    <div className="course">
+    <Link to='/' className="course" style={style}>
     <img src="assetsAc/photocourse1 (1).png" alt="" />
     <h3>Introduction Basic Programming HTML & CSS</h3>
     <div className="course-mentor">
@@ -26,6 +31,6 @@ export default function Course1() {
             <p>1h 30m</p>
         </div>
     </div>
-</div>
+</Link>
   )
 }

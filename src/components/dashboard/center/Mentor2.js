@@ -13,12 +13,12 @@ export default function Mentor2() {
         }
     }
   return (
-    <div className="mentor">
+    <div className="mentor show">
                         <div className="mentor-info">
                             <img src="assets/photomentor2.png" alt="" />
                             <div>
                                 <h3>Gustavo Torff</h3>
-                                <p>UI UX . Design</p>
+                                <p className='gray'>UI UX . Design</p>
                             </div>
                             <p className='db-c-follow' onClick={handleFollow}>Followed </p>
                         </div>

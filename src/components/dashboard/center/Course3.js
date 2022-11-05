@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Course2() {
+export default function Course3() {
   const style = {
     textDecoration: "none",
     color: "black"
   }
   return (
-    <Link to='/all-course' className="course show" style={style}>
+    <Link to='/all-course' className="course" style={style}>
       <img src="assets/photocourse2.png" alt="" />
-      <h3>Animation is the Key of Successfull UI/UX Design</h3>
+      <h3>ldjfsak is the Key of Successfull UI/UX Design</h3>
       <div className="faculty">
           <div>
 

@@ -11,7 +11,8 @@ export default function Courses() {
       <Course2 />
       <Course3 />
       <Course4 />
-
+      <Course1 />
+      <Course2 />
     </div>
   )
 }

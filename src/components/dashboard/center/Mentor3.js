@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Mentor1() {
+export default function Mentor3() {
     function handleFollow(e){
         const mentor = e.target.closest(".mentor");
 
@@ -13,14 +13,14 @@ export default function Mentor1() {
         }
     }
   return (
-    <div className="mentor followed show">
+    <div className="mentor">
                         <div className="mentor-info">
-                            <img src="assets/photomentor1.png" alt="" />
+                            <img src="assets/photomentor2.png" alt="" />
                             <div>
-                                <h3>Lincoln George</h3>
-                                <p className="gray">UI UX . Design</p>
+                                <h3>something Torff</h3>
+                                <p className='gray'>UI UX . Design</p>
                             </div>
-                            <p className='db-c-follow' onClick={handleFollow}>+ Follow </p>
+                            <p className='db-c-follow' onClick={handleFollow}>Followed </p>
                         </div>
                         <div className="mentor-course">
                             <div>

@@ -4,15 +4,17 @@ import { Link } from 'react-router-dom'
 
 export default function Nav() {
     function handleClick(e){
-        console.log(e.target)
+        // console.log(e.target)
         let temp = e.target;
         if(!e.target.classList.contains("menu")){
             temp = e.target.closest(".menu")
         }
+        console.log(temp)
         if(!temp.classList.contains("active")){
             let menus = document.querySelectorAll(".menu");
             menus.forEach(menu => menu.classList.remove("active"));
             temp.classList.add("active")
+            console.log(menus)
         }
     }
 
@@ -44,9 +46,9 @@ export default function Nav() {
                         <p>setting</p>
                     </div>
                     
-                    <div className="upgrade">
+                    <Link to='/purchase' className="upgrade">
                         <img src="assets/upgrade pro.png" alt="upgrade" />
-                    </div>
+                    </Link>
                 </div>
             </div>
   )
