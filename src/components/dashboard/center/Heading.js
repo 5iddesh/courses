@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Heading() {
   return (
-    <div class="heading">
+    <div className="heading">
                     <h2>Monthly Mentors</h2>
                     <div>
 

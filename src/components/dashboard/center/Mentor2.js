@@ -1,17 +1,28 @@
 import React from 'react'
 
 export default function Mentor2() {
+    function handleFollow(e){
+        const mentor = e.target.closest(".mentor");
+
+        if(!mentor.classList.contains("followed")){
+            mentor.classList.add("followed");
+            e.target.innerText = "+ Follow ";
+        }else{
+            mentor.classList.remove("followed");
+            e.target.innerText = "followed";
+        }
+    }
   return (
-    <div class="mentor">
-                        <div class="mentor-info">
+    <div className="mentor">
+                        <div className="mentor-info">
                             <img src="assets/photomentor2.png" alt="" />
                             <div>
                                 <h3>Gustavo Torff</h3>
                                 <p>UI UX . Design</p>
                             </div>
-                            <p>Followed </p>
+                            <p className='db-c-follow' onClick={handleFollow}>Followed </p>
                         </div>
-                        <div class="mentor-course">
+                        <div className="mentor-course">
                             <div>
                                 <img src="assets/bookcourses.png" alt="" />
                                 <p>100 Course</p>

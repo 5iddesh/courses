@@ -4,7 +4,7 @@ import CourseInfo from './CourseInfo'
 
 export default function Right() {
   return (
-    <div class="right-bar">
+    <div className="right-bar">
       <Calender />
       <CourseInfo />
     </div>

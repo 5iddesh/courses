@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Flex1() {
   return (
-    <div class="flex1">
+    <div className="flex1">
     <div>
         <img src="assets/course-info/user.png" alt="" />
         <p>500 student</p>

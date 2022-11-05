@@ -4,7 +4,7 @@ import Courses from './Courses'
 
 export default function MonthlyCourses() {
   return (
-    <section class="monthly-courses">
+    <section className="monthly-courses">
         <CourseHeading />
         <Courses />
     </section>

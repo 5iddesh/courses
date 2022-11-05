@@ -6,7 +6,7 @@ import Tracking from './Tracking'
 
 export default function Center() {
   return (
-    <div class="center">
+    <div className="center">
       <Header />
       <Tracking />
       <Mentors />

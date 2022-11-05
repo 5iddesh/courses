@@ -9,7 +9,7 @@ import Where from './Where'
 
 export default function CourseInfo() {
   return (
-    <div class="course-info">
+    <div className="db-course-info">
         <Header />
       <CourseImage />
       <CourseHandler />

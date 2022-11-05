@@ -4,7 +4,7 @@ import Heading from './Heading'
 
 export default function Mentors() {
   return (
-    <section class="mentors">
+    <section className="mentors">
       <Heading />
       <Content />
     </section>

@@ -2,34 +2,34 @@ import React from 'react'
 
 export default function Days() {
   return (
-    <div class="day-style">
-                    <div class="days">
-                        <div class="day">S</div>
-                        <div class="date">13</div>
+    <div className="day-style">
+                    <div className="days">
+                        <div className="day">S</div>
+                        <div className="date">13</div>
                     </div>
-                    <div class="days">
-                        <div class="day">S</div>
-                        <div class="date">13</div>
+                    <div className="days">
+                        <div className="day">S</div>
+                        <div className="date">13</div>
                     </div>
-                    <div class="days">
-                        <div class="day">S</div>
-                        <div class="date">13</div>
+                    <div className="days">
+                        <div className="day">S</div>
+                        <div className="date">13</div>
                     </div>
-                    <div class="days">
-                        <div class="day">S</div>
-                        <div class="date">13</div>
+                    <div className="days">
+                        <div className="day">S</div>
+                        <div className="date">13</div>
                     </div>
-                    <div class="days">
-                        <div class="day">S</div>
-                        <div class="date">13</div>
+                    <div className="days">
+                        <div className="day">S</div>
+                        <div className="date">13</div>
                     </div>
-                    <div class="days">
-                        <div class="day">S</div>
-                        <div class="date">13</div>
+                    <div className="days">
+                        <div className="day">S</div>
+                        <div className="date">13</div>
                     </div>
-                    <div class="days">
-                        <div class="day">S</div>
-                        <div class="date">13</div>
+                    <div className="days">
+                        <div className="day">S</div>
+                        <div className="date">13</div>
                     </div>
                 </div>
   )

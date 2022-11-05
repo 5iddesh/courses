@@ -4,7 +4,7 @@ import Month from './Month'
 
 export default function Calender() {
   return (
-    <div class="calender">
+    <div className="calender">
       <Month />
       <Days />
     </div>

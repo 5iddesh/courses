@@ -4,7 +4,7 @@ import Course2 from './Course2'
 
 export default function Courses() {
   return (
-    <div class="courses">
+    <div className="courses">
       <Course1 />
         <Course2 />
     </div>
