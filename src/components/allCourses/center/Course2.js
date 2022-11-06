@@ -2,9 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Course2() {
+    
     const style = {
         textDecoration: "none",
-        color: 'black'
+        color: 'black',
+        cursor: "pointer"
     }
   return (
     <Link to='/' className="course" style={style}>

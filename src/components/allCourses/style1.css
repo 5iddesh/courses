@@ -32,11 +32,76 @@ html{
     align-items: center;
     padding-right: 50px;
 }
-.header2 div{
+.header2> div{
     height: 50px;
     display: flex;
     align-items: center;
     gap: 15px;
+}
+.sort-click{
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+gap: 14px;
+
+width: 96px;
+height: 50px;
+
+/* Neutral/Soft Grey */
+
+border: 1px solid #F5F5F7;
+border-radius: 10px;
+
+}
+.header2 .sort-options{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 300px;
+    z-index: 10000;
+    
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #141522;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    position: absolute;
+    right: 25%;
+    /* top: 34%; */
+    display: none;
+
+}
+.sort-options div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.sort-options .active{
+    background: black;
+    color: white;
+}
+.sort-options h2{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #141522;
+}
+.sort-option{
+    padding: 9px 30px;
+    width: 74px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #F5F5F7;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header2 img{
     width: 17px;
@@ -51,15 +116,15 @@ html{
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
-    /* identical to box height, or 18px */
-    
-    
-    /* Neutral/Dark Grey */
-    
+    padding-left: 15px;
     color: #9C9CA4;
     border: none;
 outline: none;
+border-bottom: 1px solid gray;
 }
+/* .header2 .input::after{
+    content: url(".../public/assets/search-normal.svg");
+} */
 .header2 p{
     font-weight: 400;
 font-size: 12px;
@@ -85,6 +150,7 @@ color: #141522;
     width: 30%;
     min-width: 280px;
     margin-bottom: 40px;
+    /* z-index: -1; */
 }
 .course>img{
     width: 100%;
@@ -185,9 +251,19 @@ color: #141522;
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     .header2{
         padding-right: 0;
         flex-direction: column;
+    }
+    .sort-options{
+        margin-inline: -14%;
+    }
+    .header1{
+        margin-inline: 5%;
+    }
+    .sort-click{
+        width: 70px;
+        /* padding: 0px 20px; */
     }
 }

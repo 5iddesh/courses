@@ -1,9 +1,11 @@
 import React from 'react'
 
 export default function CourseHeading(props) {
+
   function handleCourseList(e){
     const mentors = document.querySelectorAll(".course");
     mentors.forEach(mentor => mentor.classList.remove("show"));
+    
     if(e.target.classList.contains("prev")){
       if(props.show != '0') {
         if(props.show == '1'){

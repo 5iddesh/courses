@@ -2,14 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Course1() {
+   
     const style = {
         textDecoration: "none",
-        color: 'black'
+        color: 'black',
+        cursor: "pointer"
     }
   return (
     <Link to='/' className="course" style={style}>
     <img src="assetsAc/photocourse1 (1).png" alt="" />
-    <h3>Introduction Basic Programming HTML & CSS</h3>
+    <h3> course 1 Introduction Basic Programming HTML & CSS</h3>
     <div className="course-mentor">
         <div>
             <img src="assetsAc/Ellipse 474user1.png" alt="" />

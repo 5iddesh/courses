@@ -10,6 +10,10 @@ const router = createBrowserRouter([
   {
     path: '/all-course',
     element: <AllCourses />
+  },
+  {
+    path: '/inside-course',
+    element: <InsideCourse />
   }
  
 ])
@@ -18,6 +22,7 @@ const router = createBrowserRouter([
 import App from "./App";
 import AllCourses from "./components/allCourses/AllCourses";
 import Dashboard from "./components/dashboard/Dashboard";
+import InsideCourse from "./components/insideCourse/InsideCourse";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
